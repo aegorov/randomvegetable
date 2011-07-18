@@ -17,6 +17,6 @@ get "/" do
                 'Celery','Cassava','Jerusalem Artichoke','Turnip','Rutabaga',
                 'Burdock','Arracacha','Onion','Garlic','Asparagus','Rhubarb']
   @random_vegetable = vegetables.at(Random.rand(vegetables.size))
-  @translate = Microsoft::Translator("#{@random_vegetable}", 'en', 'ru')
+  @translate = Microsoft::Translator(@random_vegetable, 'en', 'ru')
   erb :index
 end
