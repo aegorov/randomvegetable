@@ -1,4 +1,5 @@
 # encoding: utf-8
+require 'rubygems'
 require 'net/http'
 require 'nokogiri'
 require 'sinatra'
