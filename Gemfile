@@ -1,7 +1,5 @@
 source 'http://rubygems.org'
 gem 'rack'
 gem 'sinatra'
-gem 'net/http'
 gem 'nokogiri'
-gem 'erb'
 gem 'ms-translator'
