@@ -6,7 +6,7 @@ require 'sinatra'
 require 'erb'
 require 'ms-translator'
 
-Microsoft::Translator.set_app_id('YOU_APP_ID')
+Microsoft::Translator.set_app_id('DC0080E42D4D34850E763304034C6767D39C80C0')
 
 get "/" do
   vegetables = ['Broccoli','Cucumber','Tomato','Cabbage','Kohlrabi',
