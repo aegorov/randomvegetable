@@ -16,7 +16,7 @@ get "/" do
                 'Potatoes','Carrots','Beet','Radish','Radishes','Horseradish',
                 'Celery','Cassava','Jerusalem Artichoke','Turnip','Rutabaga',
                 'Burdock','Arracacha','Onion','Garlic','Asparagus','Rhubarb']
-  @random_vegetable = vegetables.at(Random.rand(vegetables.size))
+  @random_vegetable = vegetables.sample
   @translate = Microsoft::Translator(@random_vegetable, 'en', 'ru')
   erb :index
 end
