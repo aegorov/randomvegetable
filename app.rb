@@ -6,6 +6,8 @@ require 'sinatra'
 require 'erb'
 require 'yandex-translator'
 
+Yandex::Translator.set_api_key(ENV['API_KEY'])
+
 
 get "/" do
   vegetables = %w(Broccoli Cucumber Tomato Cabbage Kohlrabi
